@@ -41,7 +41,7 @@ class ImageMsg(Msg):
         self.PicUrl = xmlData.find('PicUrl').text
         self.MediaId = xmlData.find('MediaId').text
 
-class EventMsg(object):
+class EventMsg(Msg):
     def __init__(self, xmlData):
         self.ToUserName = xmlData.find('ToUserName').text
         self.FromUserName = xmlData.find('FromUserName').text

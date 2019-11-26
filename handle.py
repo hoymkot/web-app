@@ -64,5 +64,5 @@ class Handle(object):
             else:
                 print ("暂且不处理")
                 return "success"
-        except Exceptioni as Argment:
+        except Exception as Argment:
             return Argment
