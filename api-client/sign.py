@@ -32,5 +32,5 @@ if __name__ == '__main__':
     api = JsApi(b)
     ticket= api.get_ticket()
 
-    sign = Sign(ticket, 'http://example.com')
+    sign = Sign(ticket, 'http://54.241.187.189/wechat/sandbox.html')
     print sign.sign()
