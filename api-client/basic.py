@@ -28,3 +28,8 @@ class Basic:
             else:
                 self.__real_get_access_token()
 
+if __name__ == '__main__':
+    # 注意 URL 一定要动态获取，不能 hardcode
+    b = Basic()
+    print b.get_access_token()
+
