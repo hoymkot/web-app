@@ -57,7 +57,9 @@ class Handle(object):
                     return replyMsg.send()
                 if isinstance(recMsg, receive.EventMsg):
                     if recMsg.Event == 'CLICK':
-                        replyMsg = reply.LocationMsg(toUser, fromUser)
+                        content = "test"
+                        replyMsg = reply.TextMsg(toUser, fromUser, content)
+                        #replyMsg = reply.LocationMsg(toUser, fromUser)
                         return replyMsg.send()
             else:
                 print ("暂且不处理")
