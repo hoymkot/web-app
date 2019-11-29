@@ -58,7 +58,12 @@ class Handle(object):
                 if isinstance(recMsg, receive.EventMsg):
                     if recMsg.Event == 'CLICK':
                         content = "test"
-                        replyMsg = reply.TextMsg(toUser, fromUser, content)
+                        replyMsg = reply.TextMsg(toUser, fromUser, 
+                            "广隆吉大店
+                            0756-322-8782
+                            珠海市香洲区吉大石花东路203号"
+
+                            )
                         #replyMsg = reply.LocationMsg(toUser, fromUser)
                         return replyMsg.send()
             else:
