@@ -27,10 +27,8 @@ class Sign:
         return self.ret
 
 if __name__ == '__main__':
-
     b = Basic()
     api = JsApi(b)
     ticket= api.get_ticket()
-
     sign = Sign(ticket, 'http://54.241.187.189/wechat/sandbox.html')
     print sign.sign()
