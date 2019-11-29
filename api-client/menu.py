@@ -41,12 +41,12 @@ if __name__ == '__main__':
                 "sub_button":
                 [
                     {
-                        "type": "view",
+                        "type": "click",
                         "name": "吉大店",
                         "key": "jidai_location"
                     },
                     {
-                        "type": "view",
+                        "type": "click",
                         "name": "前山店",
                         "key": "jinji_location"
                     },
