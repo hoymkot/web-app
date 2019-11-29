@@ -2,6 +2,7 @@ import time
 import random
 import string
 import hashlib
+import jsapi
 
 class Sign:
     def __init__(self, jsapi_ticket, url):
@@ -25,6 +26,10 @@ class Sign:
         return self.ret
 
 if __name__ == '__main__':
-    # 注意 URL 一定要动态获取，不能 hardcode
-    sign = Sign('jsapi_ticket', 'http://example.com')
+
+    b = Basic()
+    api = JsApi(b)
+    ticket= api.get_ticket()
+
+    sign = Sign(ticket, 'http://example.com')
     print sign.sign()

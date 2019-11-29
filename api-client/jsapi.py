@@ -31,6 +31,10 @@ class JsApi:
 if __name__ == '__main__':
     # 注意 URL 一定要动态获取，不能 hardcode
     b = Basic()
+    token = b.get_access_token();
+    print ("access token")
+    print(token)
     api = JsApi(b)
-    print api.get_ticket()
-
+    ticket = api.get_ticket()
+    print("jsapi ticket")
+    print(ticket);
