@@ -9,9 +9,8 @@ import receive
 class Html(object):
     def GET(self, action):
         try:
-            render = web.template.render('templates/')
-            print(action);
-            return render.action();
+            render = web.template.frender('templates/'+action)
+            return render();
         except Exception as Argument:
             return Argument
 
