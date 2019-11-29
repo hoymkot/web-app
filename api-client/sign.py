@@ -2,7 +2,8 @@ import time
 import random
 import string
 import hashlib
-import jsapi
+from jsapi import JsApi
+from basic import Basic
 
 class Sign:
     def __init__(self, jsapi_ticket, url):
