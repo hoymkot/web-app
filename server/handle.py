@@ -57,11 +57,11 @@ class Handle(object):
                     return replyMsg.send()
                 if isinstance(recMsg, receive.EventMsg):
                     if recMsg.Event == 'CLICK':
-                        if recMsg.Eventkey == 'jidai_location';                            
+                        if recMsg.Eventkey == 'jidai_location':                            
                             replyMsg = reply.TextMsg(toUser, fromUser, 
                             "广隆吉大店\n0756-3228782\n珠海市香洲区\n吉大石花东路203号"
                             )
-                        if recMsg.Eventkey == 'jinji_location';                            
+                        if recMsg.Eventkey == 'jinji_location':                            
                             replyMsg = reply.TextMsg(toUser, fromUser, 
                             "广隆前山店\n0756-8652111\n珠海市香洲区\n前山金鸡路路555号"
                             )
