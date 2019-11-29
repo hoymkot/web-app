@@ -10,6 +10,7 @@ class Html(object):
     def GET(self, action):
         try:
             render = web.template.render('templates/')
+            print(action);
             return render.action();
         except Exception as Argument:
             return Argument
