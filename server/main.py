@@ -3,7 +3,13 @@
 import web
 from handle import Handle
 from html import Html
+from cheroot.server import HTTPServer
+from cheroot.ssl.builtin import BuiltinSSLAdapter
 
+HTTPServer.ssl_adapter = BuiltinSSLAdapter(
+        certificate='key/public.crt',
+        private_key='key/private.key'
+)
 
 urls = (
     '/wx', 'Handle',
