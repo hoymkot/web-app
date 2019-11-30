@@ -41,9 +41,9 @@ if __name__ == '__main__':
                 "sub_button":
                 [
                     {
-                        "type": "click",
+                        "type": "view",
                         "name": "吉大店",
-                        "key": "jidai_location"
+                        "key": "http://54.241.187.189/wechat/sandbox.html"
                     },
                     {
                         "type": "click",
