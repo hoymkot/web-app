@@ -7,8 +7,8 @@ from cheroot.server import HTTPServer
 from cheroot.ssl.builtin import BuiltinSSLAdapter
 
 HTTPServer.ssl_adapter = BuiltinSSLAdapter(
-        certificate='key/public.cert',
-        private_key='key/private.pem'
+        certificate='key/certificate.pem',
+        private_key='key/key.pem'
 )
 
 urls = (
