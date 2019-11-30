@@ -9,3 +9,8 @@ Validate your P2 file.
 openssl pkcs12 -in certificate.p12 -noout -info
 
 https://www.ibm.com/support/knowledgecenter/en/SSMNED_5.0.0/com.ibm.apic.cmc.doc/task_apionprem_gernerate_self_signed_openSSL.html
+
+
+Five Tips for Using Self Signed SSL Certificates with iOS
+
+https://blog.httpwatch.com/2013/12/12/five-tips-for-using-self-signed-ssl-certificates-with-ios/
