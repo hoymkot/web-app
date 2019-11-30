@@ -43,7 +43,7 @@ if __name__ == '__main__':
                     {
                         "type": "view",
                         "name": "吉大店",
-                        "key": "https://54.241.187.189/wechat/sandbox.html"
+                        "url": "http://54.241.187.189/wechat/sandbox.html"
                     },
                     {
                         "type": "click",
