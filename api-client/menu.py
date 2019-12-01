@@ -43,7 +43,7 @@ if __name__ == '__main__':
                     {
                         "type": "view",
                         "name": "吉大店",
-                        "url": "https://github.com/webpy/webpy-examples"
+                        "url": "https://secure.ssl.com/orders/new#"
                         
                     },
                     {
