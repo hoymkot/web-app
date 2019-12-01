@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        </title>        
+        <script type='text/javascript' src='http://res.wx.qq.com/open/js/jweixin-1.4.0.js'></script>
+
+        <script>    
+        wx.config({
+              debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+              appId: 'wx90a8b2281428f6bd', // 必填，公众号的唯一标识
+              timestamp: '1575042135', // 必填，生成签名的时间戳
+              nonceStr: 'z9EWQwmFQRQhpOA', // 必填，生成签名的随机串
+              signature: 'e7ccd801b88bce054175024957f0ba39e75b3f11',// 必填，签名
+              jsApiList: [
+                "updateAppMessageShareData",
+                "updateTimelineShareData",
+                "onMenuShareTimeline",
+                "onMenuShareAppMessage",
+                "onMenuShareQQ",
+                "onMenuShareWeibo",
+                "onMenuShareQZone",
+                "startRecord",
+                "stopRecord",
+                "onVoiceRecordEnd",
+                "playVoice",
+                "pauseVoice",
+                "stopVoice",
+                "onVoicePlayEnd",
+                "uploadVoice",
+                "downloadVoice",
+                "chooseImage",
+                "previewImage",
+                "uploadImage",
+                "downloadImage",
+                "translateVoice",
+                "getNetworkType",
+                "openLocation",
+                "getLocation",
+                "hideOptionMenu",
+                "showOptionMenu",
+                "hideMenuItems",
+                "showMenuItems",
+                "hideAllNonBaseMenuItem",
+                "showAllNonBaseMenuItem",
+                "closeWindow",
+                "scanQRCode",
+                "chooseWXPay",
+                "openProductSpecificView",
+                "addCard",
+                "chooseCard",
+                "openCard",                        
+            ] // 必填，需要使用的JS接口列表
+            });
+            
+        wx.ready(function(){
+        });
+            
+        wx.openLocation({
+            latitude: 0, // 纬度，浮点数，范围为90 ~ -90
+            longitude: 0, // 经度，浮点数，范围为180 ~ -180。
+            name: 'Hello WOrld', // 位置名
+            address: '珠海市香洲区吉大石花东路203号', // 地址详情说明
+            scale: 1, // 地图缩放级别,整形值,范围从1~28。默认为最大
+            infoUrl: '' // 在查看位置界面底部显示的超链接,可点击跳转
+        });
+
+    
+            
+        
+        </script>
+    </head>
+    <body>
+    Hello World
+    
+    
+    
+    
+    </body>
+</html>
+
